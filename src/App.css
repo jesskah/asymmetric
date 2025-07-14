@@ -1,5 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-size: 12pt;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #1A1A1A;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: #1A1A1A;
+  text-transform: uppercase;
+}
+
 .App {
   text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center everything */
+    gap: 0px; 
+    border-bottom: 2px solid #eee;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+
+.profile-section {
+  margin-bottom: 32px;
+}
+
+.photo-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #6B8E6B;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.connect-btn {
+  background-color: #6B8E6B;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.job, .education {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
 }
 
 .App-logo {
@@ -14,18 +83,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #F5F2ED;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #1A1A1A;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #6B8E6B;
 }
 
 @keyframes App-logo-spin {
