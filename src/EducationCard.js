@@ -1,11 +1,15 @@
 import React from 'react';
+import { formatJobDuration, calculateDuration } from './dateUtils';
 
-function EducationCard(edu) {
+function EducationCard({ school, degree, location, startDate, endDate }) {
     return (
         <div className="education">
-            <div>{edu.school}</div>
-            <div>{edu.degree}</div>
-            <div>{edu.location}</div>
+            <h3>{school}</h3>
+            <div>{degree}</div>
+            <div className="job-duration">
+                {formatJobDuration(startDate, endDate)} · {calculateDuration(startDate, endDate)}
+            </div>
+            <div className="job-location">{location}</div>
         </div>
     )
 }
